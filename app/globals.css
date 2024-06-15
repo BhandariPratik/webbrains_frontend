@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.modalStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 24;
+    border-radius: 7px;
+    padding: 30px 16px;
+}
+
+.addbutton {
+    background-color: #fff;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 1.25rem;
+    color: #a5247a;
+    border: 1px solid #a5247a;
+    border-radius: 7px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.cancelbutton {
+    margin-top: 1.25rem;
+    background-color: #a5247a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    padding-left: 55px;
+    border-radius: 7px;
+    padding-right: 55px;
+    font-weight: bold;
+}
+
+/* bg-[#D20411] px-[60px] mt-5 text-[#fff] rounded-full font-bold py-4 */
+
+/* bg-[#fff] px-[60px] mt-5 text-[#D20411] border border-[#D20411] rounded-full font-bold py-4  */
+@media (max-width: 640px) {
+    .modalStyle {
+        width: 280px !important;
+
+    }
+
+    .addbutton {
+        padding: 10px 40px;
+        border: 1px solid #a5247a;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 7px;
+        color: #a5247a;
+    }
+
+    .cancelbutton {
+        padding: 10px 40px;
+        padding: 10px 30px;
+    }
+
+}
